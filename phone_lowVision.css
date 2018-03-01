@@ -2,6 +2,8 @@
 
 body{
   font-size:200%;
+  color:white;
+  background:black;
 }
 
 .button-warning {
@@ -49,6 +51,12 @@ input[type=text]{
 .pure-button.tab_btn.active{
   background-color: black;
   color:white;
+  border:1px solid white;
+}
+
+.pure-button.tab_btn.active{
+    border-bottom:none;
+
 }
 
 #low_vision_button{
@@ -57,13 +65,18 @@ input[type=text]{
           justify-content: center;
   margin-top:25px;
   margin-bottom:25px;
+  color:black;
+}
+
+#low_vision_button button{
+  padding:10px;
 }
 
 
 /* Tab Bar and All */
 
 #tabbar{
-  background: darkgrey;
+  background: black;
   display:flex;
   -webkit-justify-content: center;
           justify-content: center;
