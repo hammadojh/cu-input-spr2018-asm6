@@ -6,8 +6,8 @@ $(document).ready(function() { // do this when the document is loaded
  //  Show the Dialer at the beginning 
  
  $(".tab_content").hide();
- $("#gestures").show(); // show the element with ID "element"
- $("#gestures_btn").addClass('active');
+ $("#dialer").show(); // show the element with ID "element"
+ $("#dialer_btn").addClass('active');
 
  // Clicking tabs
  
@@ -88,6 +88,21 @@ function trackSwipe(x1,y1,x2,y2){
   }
 }
 
+
+//////////////////////// LOW Visison /////////////////////////
+
+
+$("#low_vision_button").click(function(event) {
+  /* Act on the event */
+  NORMAL_CSS = "phone.css"
+  LOW_VISION_CSS = "phone_lowVision.css"
+  current_css = $("#pageStyle").attr('href');
+  if(current_css === NORMAL_CSS){
+    $("#pageStyle").attr('href', LOW_VISION_CSS);
+  }else{
+    $("#pageStyle").attr('href', NORMAL_CSS);
+  }
+});
 
 
 
