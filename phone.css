@@ -1,5 +1,10 @@
 /* General Classes */
 
+body{
+  padding-left:15px;
+  padding-right:15px;
+}
+
 
 .button-warning {
   background: rgb(223, 117, 20); /* this is an orange */
